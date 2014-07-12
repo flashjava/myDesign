@@ -1,0 +1,33 @@
+/* 基本结构 */
+body {font-family: "Microsoft Yahei";}
+
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* 用户登录 */
+@titleImageWidth: 55px;
+@loginMarginTop: 10px;
+@loginBorderColor:#9acfba;
+.myLogin {
+	margin: 50px auto;
+	padding: 0 10px;
+	width: 500px;
+	border: 1px solid @loginBorderColor;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px rgba(204, 204, 204, .5);
+	.title {
+		margin-top: @loginMarginTop;
+		height: @titleImageWidth;
+		background-image: url("../images/icons/icon_lock.png");
+		background-repeat: no-repeat;
+		background-position: 10px center;
+		color: #5cb85c;
+		text-indent: @titleImageWidth + 33;
+		h3 {margin-top: @loginMarginTop + 5;}
+		.register {margin-top: @loginMarginTop + 10;}
+	}
+	.form-control {border-color: @loginBorderColor;}
+	button {margin-right: 10px;}
+}
